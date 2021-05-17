@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+
+}
+#container{
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    margin: 30px auto;
+    position: relative;
+    z-index: 999;
+}
+.canvas{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+.shapes{
+    gap: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+.shape{
+    width:100px;
+    height: 100px;
+    cursor: pointer;
+    transition: background-color .4s linear;
+}
+.square{
+    background-color: #ff1eac;
+}
+.circle{
+    background-color: #1effb0;
+    border-radius: 100%;
+}
+.star{
+    background-color:dodgerblue;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.shape:hover{
+    background-color: #ff4747;
+}
+
+.colors{
+    width: 50%;
+    gap:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+.color{
+    width:100px;
+    height: 100px;
+    display: block;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.violet{
+    background-color: violet;
+}
+.btn{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    background-color:dodgerblue;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color .3s linear;
+}
+.btn:hover{
+    background-color: #1f7fd5;
+}
